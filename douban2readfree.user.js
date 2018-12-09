@@ -12,8 +12,6 @@
 // @connect     readfree.me
 // ==/UserScript==
 
-const log = console.log.bind(console);
-
 function get_book_id(url) {
     let re = /\/subject\/(\d+)(\/?$|\/.icn=(index-topchart-subject|index-book250-subject|index-editionrecommend)$)/g;
     let matches = re.exec(url);
